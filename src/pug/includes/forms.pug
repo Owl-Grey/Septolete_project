@@ -1,0 +1,263 @@
+
+#modal-jobs.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Отклик на вакансию:'
+            .modal-main-title
+        +input('Ваше имя',true,'text','name','Имя')
+        +input('Номер телефона',true,'text','phone')
+        +input-file('Прикрепить файл', '(doc / docx / pdf)')
+        +form-agree()
+        +form-error('Вывод текста об ошибке, тут может быть очень много текста в две строки спокойно.')
+        +form-btn('Отправить')
+
+#modal-about.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Стать партнером'
+        +input('Ваше имя',true,'text','name','Имя')
+        +input('Название компании',true,'text','phone')
+        +input('ИНН компании',true,'text','inn')
+        +input('E-mail',true,'text','email')
+        +input('Номер телефона',true,'text','phone')
+        +input-textarea('Комментарий:',false, 'comment')
+        +form-agree()
+        +form-error('Вывод текста об ошибке, тут может быть очень много текста в две строки спокойно.')
+        +form-btn('Отправить')
+
+
+#modal-order-product.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Заказать товар'
+            .modal-title-type-2='Уважаемый покупатель! Когда товар появится в магазинах мы оповестим вас на e-mail.'
+            .modal-main-title
+        +input('Ваше имя',true,'text','name','Имя')
+        +input('E-mail',true,'text','phone')
+        .input.input-count
+            .minus
+                div
+                    svg(width="10" height="4" viewBox="0 0 10 4" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M9.62402 3.73535H0V0H9.62402V3.73535Z" fill="#CE9671")
+            .plus
+                div
+                    svg(width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg")
+                        path(d="M10.6309 10.0635V16.4648H6.79297V10.0635H0.816406V6.32812H6.79297V0H10.6309V6.32812H16.6074V10.0635H10.6309Z" fill="#CE9671")
+            .input-title='Количество товара'
+            .input-requirment='Обязательное поле'
+            input(type='text' name='count' value='1')
+            .input-error='Тут конкретное описание ошибки. Я думаю не более одной строки.'
+        +form-agree()
+        +form-error('Вывод текста об ошибке, тут может быть очень много текста в две строки спокойно.')
+        +form-btn('Отправить')
+
+
+#modal-no-product.modal.modal-wide
+    form
+        .modal-titles
+            .modal-title='Товар отсутствует'
+            .modal-title-type-2
+                |К сожалению, в данный момент у нас нет требуемого кол-ва товаров (6 шт.) Всего доступно для заказа (4 шт.) Но, вы можете
+                a(href='')=' оформить заказ на отсутствующий товар'
+                |, когда заказаный товар поступит в магазины, вы получите уведомление на e-mail.
+
+        .modal-product-elems
+            .modal-products-title='Отсутствующие товары:'
+            .modal-product-elem
+                .modal-product-elem-img
+                    img(src='/assets/img/catalog-item-default.jpg')
+                .modal-product-elem-name-block
+                    .modal-product-elem-name='Как хороший сценарий сделать великим. Практическое руководство для людей'
+                    .modal-product-elem-authors
+                        .modal-product-elem-author='Линда Сегер'
+                        .modal-product-elem-author='Линда Сегер2'
+                .modal-product-elem-price-block
+                    .modal-product-elem-count='1 шт.'
+                    .modal-product-elem-price='1 400 ₽'
+        .modal-product-btn-block
+            +form-btn('Заказать')
+            .standart-btn.modal-products-close='Понятно, закрыть'
+
+#modal-no-product-basket.modal.modal-wide
+    form
+        .modal-titles
+            .modal-title='Товар отсутствует'
+            .modal-title-type-2='К сожалению, не все товары из вашего списка вы можете приобрести, нажмите на кнопку «Продолжить» чтобы оформить заказ без отсутствующих товаров.'
+        .modal-product-elems
+            .modal-products-title='Отсутствующие товары:'
+            .modal-product-elem
+                .modal-product-elem-img
+                    img(src='/assets/img/catalog-item-default.jpg')
+                .modal-product-elem-name-block
+                    .modal-product-elem-name='Как хороший сценарий сделать великим. Практическое руководство для людей'
+                    .modal-product-elem-authors
+                        .modal-product-elem-author='Линда Сегер'
+                        .modal-product-elem-author='Линда Сегер2'
+                .modal-product-elem-price-block
+                    .modal-product-elem-count='1 шт.'
+                    .modal-product-elem-price='1 400 ₽'
+            .modal-product-elem
+                .modal-product-elem-img
+                    img(src='/assets/img/catalog-item-default.jpg')
+                .modal-product-elem-name-block
+                    .modal-product-elem-name='Как хороший сценарий сделать великим. Практическое руководство для людей'
+                    .modal-product-elem-authors
+                        .modal-product-elem-author='Линда Сегер'
+                        .modal-product-elem-author='Линда Сегер2'
+                .modal-product-elem-price-block
+                    .modal-product-elem-count='1 шт.'
+                    .modal-product-elem-price='1 400 ₽'
+        .modal-product-btn-block
+            +form-btn('Продолжить')
+
+
+#modal-review.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Спасибо за отзыв!'
+    form
+        .modal-titles
+            .modal-title='Оставить отзыв'
+            .modal-main-title
+        +input('Заголовок',true,'text','name')
+        +input('Комментарий',true,'text','comment')
+        +input('Плюсы',true,'text','plus')
+        +input('Минусы',true,'text','minus')
+        +form-error('Вывод текста об ошибке, тут может быть очень много текста в две строки спокойно.')
+        +form-btn('Опубликовать отзыв')
+
+#modal-age.modal
+    form
+        .modal-titles
+            .modal-title='Скажите, Вам уже есть 18 лет?'
+            .modal-main-title
+
+        .modal-age-btn
+            +form-btn('Нет')
+            +form-btn('Да')
+        .modal-age-text
+            span='Прочитать подробнее'
+            a(href='')='«Федеральный закон от 1 мая 2019г. №93-ФЗ «О защите детей от информации, причиняющей вред их здоровью и развитию»'
+
+
+#modal-repass.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Восстановить пароль'
+        +input-pass('Введите e-mail указаный при регистрации', true, 'pass',false)
+        +form-error('Вывод текста об ошибке, тут может быть очень много текста в две строки спокойно.')
+        +form-btn('Отправить')
+
+
+#modal-activate-card.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Активация карты'
+        +input('Введите номер карты',true,'text','card')
+        +form-error('Номер не найден, если вы приобрели карту сегодня, активация возможна на следующий день после покупки или проверьте правильность ввода номера карты')
+        +form-btn('Активировать карту')
+
+#modal-change-card.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Замена карты'
+        .change-card-1
+            +input('Введите номер карты',true,'text','card')
+        .change-card-2
+            .change-card-title='Выберите причину замены карты'
+            +input-radio2('Карта утеряна','Замена карты на новую','Объединить карты (старая карта будет заблокирована) Объединить карты (старая карта будет)')
+
+        +form-error('Номер не найден, если вы приобрели карту сегодня, активация возможна на следующий день после покупки или проверьте правильность ввода номера карты')
+        +form-btn('Продолжить')
+
+#modal-tech.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Техническая поддержка'
+        +input('Тема вопроса',true,'text','theme')
+        +input-textarea('Описание проблемы', true,'text','comment')
+        +form-error('Номер не найден, если вы приобрели карту сегодня, активация возможна на следующий день после покупки или проверьте правильность ввода номера карты')
+        +form-btn('Отправить')
+
+#modal-activate-code.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Введите код подтверждения'
+            .modal-title-type-2
+                | Введите код подтверждения отправленный вам выбранным методом подтверждения (по умолчанию - SMS) Метод подтверждения можно изменить в
+                a(href='')=' настройках аккаунта.'
+        +input('Код',true,'text','code')
+        +form-error('Номер не найден, если вы приобрели карту сегодня, активация возможна на следующий день после покупки или проверьте правильность ввода номера карты')
+        +form-btn('Подтвердить')
+
+
+#modal-delete-agent.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Введите код подтверждения'
+            .modal-title-type-2
+                | Вы действительно хотите удалить контрагента
+                a(href='')=' ООО «Чтиво» '
+                | ?
+        +form-error('Номер не найден, если вы приобрели карту сегодня, активация возможна на следующий день после покупки или проверьте правильность ввода номера карты')
+        .modal-agent-btn
+            +form-btn('Нет')
+            +form-btn('Да, удалить')
+
+
+#modal-delete-order.modal
+    .modal-thanks
+        .modal-thanks-title='Отправлено!'
+        .modal-thanks-text='Наши специалисты свяжутся с Вами.'
+    form
+        .modal-titles
+            .modal-title='Отменить заказ?'
+            .modal-title-type-2
+                | Уважаемый покупатель! Вы действительно хотите отменить заказ
+                a(href='')=' №1148125 '
+                | от
+                a(href='')=' №01.12.19 '
+                | ?
+        +form-error('Номер не найден, если вы приобрели карту сегодня, активация возможна на следующий день после покупки или проверьте правильность ввода номера карты')
+        .modal-agent-btn
+            +form-btn('Нет')
+            +form-btn('Да, отменить')
+
+#modal-change-city.modal
+    form
+        .modal-titles
+            .modal-title='Изменение города'
+
+        .input.modal-city
+            input(type='text' name='city')
+            .city-elems
+                .city-elem='Мариуполь'
+                .city-elem='Магнитогорск'
+                .city-elem='Махачкала'

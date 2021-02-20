@@ -1,0 +1,42 @@
+@font-face {
+  font-family: "MetaPro";
+  src: url('/dist/assets/fonts/MetaPro-Norm.eot'); // IE9 Compat Modes
+  src: url('/dist/assets/fonts/MetaPro-Norm.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('/dist/assets/fonts/MetaPro-Norm.woff') format('woff'), // Pretty Modern Browsers
+  url('/dist/assets/fonts/MetaPro-Norm.ttf')  format('truetype') // Safari, Android, iOS
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: "MetaPro";
+  src: url('/dist/assets/fonts/MetaPro-Bold.eot'); // IE9 Compat Modes
+  src: url('/dist/assets/fonts/MetaPro-Bold.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('/dist/assets/fonts/MetaPro-Bold.woff') format('woff'), // Pretty Modern Browsers
+  url('/dist/assets/fonts/MetaPro-Bold.ttf')  format('truetype') // Safari, Android, iOS
+}
+
+@font-face {
+  font-weight: italic;
+  font-family: "MetaPro";
+  src: url('/dist/assets/fonts/MetaPro-NormIta.eot'); // IE9 Compat Modes
+  src: url('/dist/assets/fonts/MetaPro-NormIta.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('/dist/assets/fonts/MetaPro-NormIta.woff') format('woff'), // Pretty Modern Browsers
+  url('/dist/assets/fonts/MetaPro-NormIta.ttf')  format('truetype') // Safari, Android, iOS
+}
+@font-face {
+  font-weight: 700;
+  font-family: "MetaPro";
+  src: url('/dist/assets/fonts/MetaPro-BoldIta.eot'); // IE9 Compat Modes
+  src: url('/dist/assets/fonts/MetaPro-BoldIta.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('/dist/assets/fonts/MetaPro-BoldIta.woff') format('woff'), // Pretty Modern Browsers
+  url('/dist/assets/fonts/MetaPro-BoldIta.ttf')  format('truetype') // Safari, Android, iOS
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "MetaPro";
+  src: url('/dist/assets/fonts/MetaPro-Norm.eot'); // IE9 Compat Modes
+  src: url('/dist/assets/fonts/MetaPro-Norm.eot?#iefix') format('embedded-opentype'), // IE6-IE8
+  url('/dist/assets/fonts/MetaPro-Norm.woff') format('woff'), // Pretty Modern Browsers
+  url('/dist/assets/fonts/MetaPro-Norm.ttf')  format('truetype') // Safari, Android, iOS
+}

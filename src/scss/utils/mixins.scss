@@ -1,0 +1,18 @@
+@mixin placeholder{
+  ::-webkit-input-placeholder{@content}
+  :-moz-placeholder{@content}
+  ::-moz-placeholder{@content}
+  :-ms-input-placeholder{@content}
+}
+@mixin placeholder-input{
+  .input input::-webkit-input-placeholder{@content}
+  .input input:-moz-placeholder{@content}
+  .input input::-moz-placeholder{@content}
+  .input input:-ms-input-placeholder{@content}
+}
+@mixin placeholder-center{
+  .input-type-2 input::-webkit-input-placeholder{@content}
+  .input-type-2 input:-moz-placeholder{@content}
+  .input-type-2 input::-moz-placeholder{@content}
+  .input-type-2 input:-ms-input-placeholder{@content}
+}

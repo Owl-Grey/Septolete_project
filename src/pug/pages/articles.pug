@@ -1,0 +1,68 @@
+extends ../layout/main
+block variables
+  - var title = 'Septolete Статьи';
+  - var description = 'Septolete Статьи';
+  - var bodyclass = 'main';
+block css
+  each css in htmlWebpackPlugin.files.css
+    link(href=css, rel='stylesheet')
+block script
+  each js in htmlWebpackPlugin.files.js
+    script(type='text/javascript', src=js)
+
+
+block content  
+  .articles-block      
+    .container       
+      +breadcrumbs('Главная страница','Статьи')
+      .atrlicles-content
+        h1='Статьи' 
+        .dropdown
+          input.selector(type="text" size="0")
+          .dropdown-btn.anons-elem
+            .btn-text
+              span='Выберите категорию'
+            svg(width="13" height="9" viewBox="0 0 13 9" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M6.49699 1.85317L12.1462 8.3715C12.3415 8.59685 12.6582 8.59685 12.8535 8.3715C13.0488 8.14609 13.0488 7.78073 12.8535 7.55535L6.85066 0.628944C6.65533 0.403633 6.33866 0.403633 6.14333 0.628944L0.140441 7.55535C-0.0514869 7.78465 -0.0459765 8.15005 0.152752 8.3715C0.346615 8.58751 0.65394 8.58751 0.847774 8.3715L6.49699 1.85317Z" fill="#20384E")
+          .dropdown-list
+            div
+              p.dropdown-link.kids='Дети'
+              p.dropdown-link.advice='Советы'
+              p.dropdown-link.diseases='Заболевания'
+        .articles-a-lot
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer 2.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer 3.svg','Советы','Причины головной боли. ')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer 4.svg','Дети','Дети и боль в горле')
+          .grid-elem.anons-elem  
+            +interesting-card('/assets/img/photo_footer 4.svg','Дети','Дети и боль в горле')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem
+            +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+          .grid-elem.anons-elem  
+            +interesting-card('/assets/img/photo_footer 4.svg','Дети','Дети и боль в горле')
+          .grid-elem.anons-elem  
+            +interesting-card('/assets/img/photo_footer 4.svg','Дети','Дети и боль в горле')
+        .more-grid-elem
+          .articles-a-lot
+            .grid-elem.anons-elem
+              +interesting-card('/assets/img/photo_footer 2.svg','Советы','Почему магний важен в человеческом теле?')
+            .grid-elem.anons-elem
+              +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+            .grid-elem.anons-elem
+              +interesting-card('/assets/img/photo_footer.svg','Советы','Почему магний важен в человеческом теле?')
+            .grid-elem.anons-elem  
+              +interesting-card('/assets/img/photo_footer 3.svg','Советы','Причины головной боли. ')
+        .more-articles-btn.anons-elem 
+          p='Показать еще'

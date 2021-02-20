@@ -1,0 +1,31 @@
+extends ../layout/main
+block variables
+    - var title = 'Septolete Где купить?';
+    - var description = 'Septolete Где купить?';
+    - var bodyclass = 'main';
+
+
+block css
+    each css in htmlWebpackPlugin.files.css
+        link(href=css, rel='stylesheet')
+block script
+    each js in htmlWebpackPlugin.files.js
+        script(type='text/javascript', src=js)
+
+
+block content  
+    .container
+      +breadcrumbs('Главная страница','Где купить')
+      .where-to-buy
+        h1='Где купить'
+        .where-to-buy-content
+          p.where-to-buy-txt='Выберите нужный вам продукт'
+          .prods-line.owl-carousel 
+            +products('/assets/img/pod1.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
+            +products('/assets/img/prod2.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
+            +products('/assets/img/prod3.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
+            +products('/assets/img/prod4.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
+            +products('/assets/img/prod4.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')          
+          .map 
+            h2='Other widget'
+            

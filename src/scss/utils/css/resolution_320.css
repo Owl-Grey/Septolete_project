@@ -1,0 +1,7 @@
+@media screen and (max-width: 760px) {
+  .container {
+    width: 300px;
+    padding-left: calc((100vw - 300px) / 2);
+    padding-right: calc((100vw - 300px) / 2); } }
+
+/*# sourceMappingURL=resolution_320.css.map */

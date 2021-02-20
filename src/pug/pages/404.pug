@@ -1,0 +1,27 @@
+extends ../layout/main
+block variables
+    - var title = 'Septolete 404';
+    - var description = 'Septolete 404';
+    - var bodyclass = 'page-404';
+
+
+block css
+    each css in htmlWebpackPlugin.files.css
+        link(href=css, rel='stylesheet')
+block script
+    each js in htmlWebpackPlugin.files.js
+        script(type='text/javascript', src=js)
+
+
+block content
+
+
+  
+    .container-404
+        .page-404
+            h1='Ошибка 404'              
+            .page-404-text='К сожалению, таких страниц не найдено. Не волнуйтесь, такое иногда случается. Возможно, страница была удалена или поисковый запрос был введен неправильно.'
+            .btn-404  
+              a(href='/index.html')='Вернуться на главную страницу'
+        .img-404
+          img(src='/assets/img/baba-404.png')
