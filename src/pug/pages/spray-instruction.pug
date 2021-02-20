@@ -14,7 +14,8 @@ block script
 block content
   
   .head-block  
-    +anim-bg()
+    .bg-cont   
+      +anim-bg()
     .container      
       +breadcrumbs('Главная страница','Инструкция по использованию Спрей Септолете® тотал')
       
@@ -61,7 +62,7 @@ block content
             li  
               a(href='#spray-receipt')='Условия отпуска'     
         .head-images-spray
-          img.cross(src='/assets/img/bg-cross.svg')
+          
           img.srpay-photo(src='/assets/img/spray-photo.svg')
           img.total-action(src='/assets/img/total-action.svg')
       .page-content               

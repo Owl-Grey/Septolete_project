@@ -1,31 +1,151 @@
 extends ../layout/main
 block variables
-    - var title = 'Septolete Где купить?';
-    - var description = 'Septolete Где купить?';
-    - var bodyclass = 'main';
-
-
+  - var title = 'Septolete Страница товара. Спрей';
+  - var description = 'Septolete Страница товара. Спрей';
+  - var bodyclass = 'main';
 block css
-    each css in htmlWebpackPlugin.files.css
-        link(href=css, rel='stylesheet')
+  each css in htmlWebpackPlugin.files.css
+    link(href=css, rel='stylesheet')
 block script
-    each js in htmlWebpackPlugin.files.js
-        script(type='text/javascript', src=js)
+  each js in htmlWebpackPlugin.files.js
+    script(type='text/javascript', src=js)
 
 
-block content  
-    .container
-      +breadcrumbs('Главная страница','Где купить')
-      .where-to-buy
-        h1='Где купить'
-        .where-to-buy-content
-          p.where-to-buy-txt='Выберите нужный вам продукт'
-          .prods-line.owl-carousel 
-            +products('/assets/img/pod1.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
-            +products('/assets/img/prod2.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
-            +products('/assets/img/prod3.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
-            +products('/assets/img/prod4.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')
-            +products('/assets/img/prod4.svg','Леденцы Септолете Тотал. Вкус: Лимон и Мед')          
-          .map 
-            h2='Other widget'
-            
+block content
+  
+  .head-block
+    .bg-cont-prod   
+      +anim-bg()
+    .container      
+      +breadcrumbs('Главная страница','Септолете® Тотал Спрей')      
+      .head-container
+        .head-text-spray
+          p.spray-title-prod='Септолете® Тотал спрей'
+          .spray-info-mobile
+            ul.spray-info-prod
+              li='Быстро снимает боль'
+              li='Устраняет причины инфекции'
+              li='Снижает воспаление'
+            .checked-img  
+              img(src='/assets/img/check.svg')
+              img(src='/assets/img/sugar.svg')
+              img(src='/assets/img/glu.svg')
+        .head-images-spray-prod        
+          img.srpay-photo-prod(src='/assets/img/spray-photo.svg')
+          img.total-action-prod(src='/assets/img/total-action.svg')
+      .page-content-prod               
+          .page-text-prod  
+            div.anons-elem
+              h1#compose='Общая КОМПОЗИЦИЯ Септолете® Тотал:'
+              h3='Уникальная формула на рынке'
+              .unic-form
+                img(src='/assets/img/sept-composition.svg')
+                .unic-form-text
+                  p='хлорид цитилпиридиния 1 мг устраняет причину инфекции.'
+                  p='гидрохлорид бензидамина 3 мг избавляет от боли и воспаления горла'
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem.triple-force
+              h2#triplet='Тройная сила спрея Септолете® Тотал'
+              .force-troix
+                img.spray-force(src='/assets/img/spray-photo.svg')
+                img(src='/assets/img/group-block.svg')
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem
+              h2#real-help='Септолете Тотал - реальная помощь в случае начального першения и раздражения в горле или болезненного, припухшего горла.'
+              img.graph(src='/assets/img/graph.svg')
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem
+              h2#using='Как использовать спрей Септолете®  Тотал?'
+              p='Удобный для пользователя режим дозировки Septolete total для взрослых и детей от' 
+                span.red-txt=' 6 лет и старше'
+              p='Спрей:'
+                span.red-txt=' только 1-2 затяжки для одной дозы'
+              table
+                tr.tr-head
+                  th='Дозировка'
+                  th='Взрослые и дети старше 12 лет'
+                  th='Дети в возрасте 6-12 лет'
+                    br
+                    span='Обратите внимание на инструкцию'
+                tr
+                  td.td-title='Спрей Септолете®  Тотал'
+                  td.tr-body
+                    span.red-txt='1-2 пшика'
+                    span=' каждые' 
+                    span.red-txt=' 2 часа' 
+                    span=' (не более 3-5 раз в день)'
+                  td.tr-body
+                    span.red-txt='1 пшик'
+                    span=' каждые' 
+                    span.red-txt=' 2 часа' 
+                    span=' (не более 3-5 раз в день)'
+                tr
+                  td(rowspan='3')
+                    img.table-img(src='/assets/img/spray-photo.svg')
+                  td.tr-body='Повторять каждые'
+                    span.red-txt=' 2ч'
+                  td.tr-body='Повторять каждые'
+                    span.red-txt=' 2ч'
+                tr
+                  td.tr-body='Макс. доза'
+                    span.red-txt=' 3-5 применений'
+                  td.tr-body='Макс. доза'
+                    span.red-txt=' 3-5 применений'
+                tr
+                  td='Задержите дыхание во время опрыскивания'
+                  td='Задержите дыхание во время опрыскивания'
+              img.line-bottom(src='/assets/img/Line 23.svg')      
+            div.blocks.anons-elem
+              h1#why='Почему выбирают спрей Септолете® Тотал?'
+              ul
+                li='Уникальная формула на рынке'
+                li='Тройная сила в одной таблетке (снимает боль, уменьшает воспаление, устраняет причину инфекции)'
+              .block-time
+                img(src='/assets/img/time.svg')
+                .time-ins
+                  h2='Быстро'
+                  p.red-txt='1-2 пшика'
+                    span=' для эффективного лечения'                        
+                        p='Короткая и фиксированная форсунка для немедленного применения и широкого рассеивания препарата на болезненном участке'
+              .block-like
+                img(src='/assets/img/like.svg')
+                .like-ins  
+                  h2='Просто'
+                  span.red-txt='Простое использование'
+                  p='Без каких-либо регулировок насадки'                      
+              .block-hand
+                img(src='/assets/img/hand.svg')
+                .hand-ins
+                  h2='Удобно'
+                  span.red-txt='Удобно использовать'
+                  ul
+                    li='За работой'
+                    li='В движении'
+                    li='Перед сном'
+              .button-prod
+                a(href='/')='Где купить'        
+            div.text-link.anons-elem        
+              p='Ссылки: Кошир П. Сравнение терапевтической эквивалентности тестовых и эталонных рецептур фиксированной комбинации 3 миллиграммов бензидамина гидрохлорида и 1 миллиграммов цитилпиридинового хлорида при лечении воспаления горла, связанного с инфекциями верхних дыхательных путей. Med Razgl 2015; 54 (Suppl 3): 433-42'    
+          .page-nav.anons-elem 
+            .new_article_transitions_block#scrollbar
+              ul
+                  li
+                    a(href='#compose')='Общая композиция'
+                  li
+                    a(href='#triplet')='Тройная сила спрея Септолете Тотал'
+                  li
+                    a(href='#real-help')='Septolete total - реальная помощь в случае начального царапания и раздражения в горле или болезненного, припухшего горла.'
+                  li
+                    a(href='#using')='Как использовать спрей Септолете Тотал?'
+                  li
+                    a(href='#why')='Почему выбирают наш спрей?'
+                  
+                    
+          
+  +interesting-block()
+  
+  
+    
+  
+        
+  

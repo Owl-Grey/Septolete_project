@@ -616,7 +616,7 @@ a.breadcrumbs-item:hover{
   border-radius: 50px;
 }
 .spray-title{
-  margin-top: 180px;
+  margin-top: 100px;
   margin-bottom: 30px;
   font-family: MetaPro;
   font-weight: 700;
@@ -631,9 +631,8 @@ a.breadcrumbs-item:hover{
   color: #435363;
 }
 .head-container{
+  margin:auto;
   display: flex;
-  margin-bottom: 30px;
-  margin-left: 90.5px;
 }
 .block-scroll{
   overflow: hidden;
@@ -644,6 +643,7 @@ a.breadcrumbs-item:hover{
 .total-action{
   height: 126px;
   width: 138px;
+  top:-40px;
   position: absolute;
   margin-left: 20px;
   animation: rotate_logo 4s infinite;
@@ -652,7 +652,7 @@ a.breadcrumbs-item:hover{
 .srpay-photo{
   height: 460px;
   width: 391px;
-  margin-top: 40px;
+
 }
 .head-images-spray{
   position: relative;
@@ -660,16 +660,17 @@ a.breadcrumbs-item:hover{
   margin-left: 160px;
 }
 .cross{
-  z-index: -10;
+  z-index: -7;
   position: absolute;
-  right: calc(50% - 700px);
-  top: calc(50% - 545px);
+  right: calc(50% - 1050px);
+  top: calc(50% - 105px);
 }
 .page-text{
   width: 690px;
 }
 .page-content{
   display: flex;
+  margin-top: 120px;
   margin-left: 90.5px;
   color: #20384E;
 }
@@ -678,13 +679,12 @@ a.breadcrumbs-item:hover{
   color: #125491;
   position:sticky;
   right: 493px;
-  top:120px;
+  top:180px;
   width: 275px;
   height: 300px;
   margin-left: 120px;
   background: #F2FAFF;
   border-radius: 10px;
-  margin-top: 90px;
   margin-bottom: 150px;
 
 }
@@ -704,7 +704,6 @@ a.breadcrumbs-item:hover{
 .page-nav ul{
   padding: 0 0 0 17px;
   min-height: 300px;
-
 }
 .page-nav li{
   margin-top: 20px;
@@ -728,7 +727,7 @@ a.breadcrumbs-item:hover{
   line-height: 150%;
 }
 .page-text h1{
-  margin: 90px 0 70px 0;
+  margin: 0px 0 70px 0;
 }
 .page-text ul{
   padding-left: 17px;
@@ -787,6 +786,7 @@ a.breadcrumbs-item:hover{
   position: absolute;
 }
 .razm{
+  background-color: #F5FCFF;
   position: absolute;
   left: 0;
   top: 0;
@@ -794,14 +794,13 @@ a.breadcrumbs-item:hover{
   z-index: -100500;
 }
 .background-mixin{
+  filter: blur(10px);
   position: relative;
   top: 0;
   left: 0;
+  z-index: -100501;
 }
-.razm{
-  width: 100%;
 
-}
 .el1{
   top: 220px;
   left: 543px;
@@ -1416,6 +1415,240 @@ a.breadcrumbs-item:hover{
 
 
 
+.head-block .container {
+  flex-direction:column;
+  position: relative;
+}
+.head-block{
+
+  padding-top: 90px;
+  margin-top: -90px;
+}
+.spray-title-prod{
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-family: MetaPro;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 55px;
+  color: #435363;
+}
+.spray-info-prod{
+  font-weight: 700;
+  margin-bottom: 60px;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 25px;
+  color: #20384E;
+}
+.spray-info-prod li{
+  margin-bottom: 40px;
+}
+.spray-info-prod li::marker{
+  height: 13px;
+  width: 13px;
+  color:  #CE2424;
+}
+.head-container{
+  display: flex;
+  padding-bottom: 30px;
+  margin-left: 90.5px;
+}
+.block-scroll{
+  overflow: hidden;
+}
+.head-text-spray{
+  margin-left: 0px;
+}
+.total-action-prod{
+  height: 126px;
+  width: 138px;
+  left:-120px;
+  top: calc(20% + 25px);
+  position: absolute;
+
+  animation: rotate_logo 4s infinite;
+  transition-timing-function: cubic-bezier(0, 4.9, 0, 0.06)
+}
+.srpay-photo-prod{
+  height: 465px;
+  width: 387px;
+  margin-top: -50px;
+  margin-left: 110px;
+}
+.head-images-spray-prod{
+  position: relative;
+  margin-top: 137px;
+  margin-left: 160px;
+}
+.checked-img{
+  display: flex;
+  margin-top: 0;
+}
+
+.page-text-prod{
+  width: 690px;
+}
+.page-content-prod{
+  display: flex;
+  margin-top: 120px;
+  margin-left: 90.5px;
+  color: #20384E;
+}
+.unic-form{
+  display: flex;
+}
+.force-troix{
+  margin: 50px 0 80px 0;
+}
+.spray-force{
+  position: absolute;
+  top: 140px;
+  left: 273px;
+  width: 173px;
+  height: 249px;
+}
+.triple-force{
+  position: relative;
+}
+.table-img{
+  height: 210px;
+  width: 160px;
+}
+.page-text-prod table tr{
+  font-size: 14px;
+  color:#20384E;
+  text-align: center;
+}
+.page-text-prod table td{
+  width: 189px;
+}
+.page-text-prod table th span{
+  font-weight: 400;
+  margin-top: 5px;
+}
+.tr-head{
+  padding-bottom: 30px;
+  border-bottom: 1px solid #45B3F1;
+}
+.tr-body{
+  border-bottom: 1px solid #F2F2F2;
+}
+.td-title{
+  font-weight: 700;
+}
+.page-text-prod table {
+  border-collapse: collapse;
+  height: 406px;
+  width: 690px;
+}
+.page-text-prod h2{
+  margin: 80px  0 50px 0;
+  font-size: 36px;
+  line-height: 140%;
+}
+.page-text-prod h1{
+  margin: 0px  0 50px 0;
+  font-size: 36px;
+  line-height: 140%;
+}
+.page-text-prod h3{
+  font-size: 24px;
+  line-height: 150%;
+  margin: 0;
+}
+.page-text-prod p{
+  font-size: 16px;
+  line-height: 150%;
+  margin: 0;
+}
+.unic-form{
+  margin-bottom: 80px;
+  margin-top: 50px;
+}
+.unic-form-text{
+  margin-left:30px;
+}
+.unic-form-text p{
+  margin-bottom: 20px;
+}
+.graph{
+  margin-bottom: 110px;
+}
+.block-time{
+  display: flex;
+}
+.block-like{
+  display: flex;
+}
+.block-hand{
+  display: flex;
+}
+.time-ins{
+  margin-left: 54px;
+}
+.hand-ins{
+  margin-left: 54px;
+}
+.like-ins{
+  margin-left: 54px;
+}
+.text-link{
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+.blocks h2{
+  color: #DF1E18;
+}
+.blocks ul{
+  font-size: 24px;
+  line-height: 150%;
+}
+.blocks li{
+  margin-top: 40px;
+}
+.blocks li::marker{
+  color:#DF1E18;
+}
+.block-hand ul{
+  font-size: 16px;
+  line-height: 140%;
+}
+.block-hand li{
+  margin-top:10px;
+}
+.block-hand li::marker{
+  color: #20384E;
+}
+.button-prod{
+  justify-content: center;
+  margin-top: 50px;
+  font-size: 16px;
+  border: 0;
+  display: flex;
+  height: 50px;
+  width: 132px;
+  background: linear-gradient(180deg, #CE2424 0%, #FF0000 100%);
+  border-radius: 50px;
+}
+.button-prod:hover{
+  background: linear-gradient(90deg, #620000 0%, #D60000 100%);
+}
+.button-prod a{
+  padding: 13px 20px 13px 20px;
+  display: flex;
+  width: 72px;
+  color: #FFFFFF;
+  font-family: MetaPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+
+
 
 
 
@@ -1450,6 +1683,31 @@ a.breadcrumbs-item:hover{
 .mobile-disp{
   display: none;
 }
+.bg-cont {
+  overflow: hidden;
+  position: absolute;
+  padding-top: 90px;
+  margin-top:-90px;
+  width: 100vw;
+  height: 720px;
+}
+.bg-cont-prod {
+  overflow: hidden;
+  position: absolute;
+  padding-top: 90px;
+  margin-top:-90px;
+  width: 100vw;
+  height: 620px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
