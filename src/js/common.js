@@ -222,9 +222,9 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){
-    $(".menu_button_mobile").on("click", function (event) {
+    $(".menu_button_mobile").click( function (event) {
         event.preventDefault();
-
+        console.log("1111")
         if ($('.menu-mobile').hasClass('fade')){
           $(".menu_button_mobile").attr("src","/assets/img/menu_768.svg");
           $('.menu-mobile').removeClass('fade')

@@ -566,7 +566,7 @@
     margin-bottom: 50px;;
     margin-left: 30px;
   }
-  .head-text-spray{
+  .head-text-spray-prod{
     margin-left: 0px;
   }
   .total-action{
@@ -578,9 +578,9 @@
     transition-timing-function: cubic-bezier(0, 4.9, 0, 0.06)
   }
   .srpay-photo{
-    height: 70%;
-    width: 70%;
-    margin-top: 40px;
+    height: 80%;
+    width: 80%;
+    margin-top: -10px;
   }
   .head-images-spray{
     position: relative;
@@ -590,10 +590,8 @@
   .cross{
     position: absolute;
     z-index: -10;
-    width: 1077px;
-    height: 702px;
-    right: calc(50% - 500px);
-    top: calc(50% - 345px);
+    right: calc(50% - 1050px);
+    top: calc(50% - 110px);
   }
   .page-text{
     width: 690px;
@@ -614,7 +612,7 @@
     background: #F2FAFF;
     border-radius: 10px;
     overflow-y: scroll;
-    margin-top: 90px;
+
     margin-bottom: 150px;
   }
   .page-nav a{
@@ -1217,6 +1215,335 @@
   .prods-line.owl-carousel .owl-nav.disabled{
     display: block;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .spray-title-prod{
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-family: MetaPro;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 55px;
+    color: #435363;
+  }
+  .spray-info-prod{
+    font-weight: 700;
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 24px;
+    padding-left: 25px;
+    color: #20384E;
+  }
+  .spray-info-prod li{
+    margin-bottom: 40px;
+  }
+  .spray-info-prod li::marker{
+    height: 13px;
+    width: 13px;
+    color:  #CE2424;
+  }
+  .head-prod-container{
+    display: flex;
+    padding-bottom: 30px;
+    margin-left: 90.5px;
+  }
+  .block-scroll{
+    overflow: hidden;
+  }
+  .head-text-spray{
+    margin-left: 0px;
+  }
+  .total-action-prod{
+    height: 126px;
+    width: 138px;
+    left:-120px;
+    top: calc(20% + 25px);
+    position: absolute;
+
+    animation: rotate_logo 4s infinite;
+    transition-timing-function: cubic-bezier(0, 4.9, 0, 0.06)
+  }
+  .srpay-photo-prod{
+    height: 465px;
+    width: 387px;
+    margin-top: -50px;
+    margin-left: 110px;
+  }
+  .head-images-spray-prod{
+    position: relative;
+    margin-top: 137px;
+    margin-left: 160px;
+  }
+  .checked-img{
+    margin-left: 13px;
+    display: flex;
+    margin-top: 0;
+  }
+
+  .page-text-prod{
+    width: 630px;
+  }
+  .page-content-prod{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 90.5px;
+    color: #20384E;
+  }
+  .unic-form{
+    display: flex;
+  }
+  .force-troix{
+    margin: 50px 0 80px 0;
+  }
+  .spray-force{
+    position: absolute;
+    top: 250px;
+    left: 273px;
+    width: 173px;
+    height: 249px;
+  }
+  .triple-force{
+    position: relative;
+  }
+  .table-img{
+    height: 210px;
+    width: 160px;
+  }
+  .page-text-prod table tr{
+    font-size: 14px;
+    color:#20384E;
+    text-align: center;
+  }
+  .page-text-prod table td{
+    width: 189px;
+  }
+  .page-text-prod table th span{
+    font-weight: 400;
+    margin-top: 5px;
+  }
+  .tr-head{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #45B3F1;
+  }
+  .tr-body{
+    border-bottom: 1px solid #F2F2F2;
+  }
+  .td-title{
+    font-weight: 700;
+  }
+  .page-text-prod table {
+    border-collapse: collapse;
+    height: 406px;
+    width: 690px;
+  }
+  .page-text-prod h2{
+    margin: 80px  0 50px 0;
+    font-size: 36px;
+    line-height: 140%;
+  }
+  .page-text-prod h1{
+    margin: 0px  0 50px 0;
+    font-size: 36px;
+    line-height: 140%;
+  }
+  .page-text-prod h3{
+    font-size: 24px;
+    line-height: 150%;
+    margin: 0;
+  }
+  .page-text-prod p{
+    font-size: 16px;
+    line-height: 150%;
+    margin: 0;
+  }
+  .unic-form{
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+  .unic-form-text{
+    margin-left:30px;
+  }
+  .unic-form-text p{
+    margin-bottom: 20px;
+  }
+  .graph{
+    margin-bottom: 80px;
+  }
+  .block-time{
+    display: flex;
+  }
+  .block-like{
+    display: flex;
+  }
+  .block-hand{
+    display: flex;
+  }
+  .time-ins{
+    margin-left: 54px;
+  }
+  .hand-ins{
+    margin-left: 54px;
+  }
+  .like-ins{
+    margin-left: 54px;
+  }
+  .text-link{
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+  .blocks h2{
+    color: #DF1E18;
+    margin-bottom: 20px;
+    margin-top: 60px;
+  }
+  .blocks ul{
+    font-size: 24px;
+    line-height: 150%;
+  }
+  .blocks li{
+    margin-top: 40px;
+  }
+  .blocks li::marker{
+    color:#DF1E18;
+  }
+  .block-hand ul{
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .block-hand li{
+    margin-top:10px;
+  }
+  .block-hand li::marker{
+    color: #20384E;
+  }
+  .button-prod{
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 16px;
+    border: 0;
+    display: flex;
+    height: 50px;
+    width: 132px;
+    background: linear-gradient(180deg, #CE2424 0%, #FF0000 100%);
+    border-radius: 50px;
+  }
+  .button-prod:hover{
+    background: linear-gradient(90deg, #620000 0%, #D60000 100%);
+  }
+  .button-prod a{
+    padding: 13px 20px 13px 20px;
+    display: flex;
+    width: 72px;
+    color: #FFFFFF;
+    font-family: MetaPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+
+
+  .for-kids-block{
+    margin-top: 200px;
+    width: 1167px;
+    height: 974px;
+    background-image: url('/dist/assets/img/bg-1366.svg');
+    border-radius: 10px;
+  }
+  .every-mom{
+    margin-top: 50px;
+    display: flex;
+  }
+  .every-mom p{
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 700;
+    width: 650px;
+  }
+  .cens{
+    height:59px;
+    position: relative;
+    top:0px;
+    right: -70px;
+  }
+  .main-info p{
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+  .main-info ul{
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .main-info li::marker{
+    width: 7px;
+    height: 7px;
+    color:#DF1E18;
+  }
+  .main-info {
+    width: 600px;
+  }
+  .kids-ins-block{
+    margin: auto;
+    width: 979px;
+    margin-top: 85px;
+    display: flex;
+  }
+  .uls-list{
+    display: flex;
+  }
+  .kids-img{
+    width: 293px;
+    height: 453px;
+    margin-left: 160px;
+    margin-top: -60px;
+  }
+  .not-inside{
+    margin-top:60px;
+  }
+  .footnote{
+    width: 1232px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .footnote p{
+    margin-top: 60px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

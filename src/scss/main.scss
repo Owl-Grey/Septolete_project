@@ -25,7 +25,6 @@ header {
   transition-duration: .3s;
 }
 footer{
-
   font-size: 16px;
   color:#20384E;
   margin-top: 0;
@@ -1420,7 +1419,6 @@ a.breadcrumbs-item:hover{
   position: relative;
 }
 .head-block{
-
   padding-top: 90px;
   margin-top: -90px;
 }
@@ -1449,15 +1447,15 @@ a.breadcrumbs-item:hover{
   width: 13px;
   color:  #CE2424;
 }
-.head-container{
+.head-prod-container{
   display: flex;
-  padding-bottom: 30px;
+
   margin-left: 90.5px;
 }
 .block-scroll{
   overflow: hidden;
 }
-.head-text-spray{
+.head-text-spray-prod{
   margin-left: 0px;
 }
 .total-action-prod{
@@ -1538,6 +1536,7 @@ a.breadcrumbs-item:hover{
   font-weight: 700;
 }
 .page-text-prod table {
+  margin-top: 60px;
   border-collapse: collapse;
   height: 406px;
   width: 690px;
@@ -1599,11 +1598,18 @@ a.breadcrumbs-item:hover{
 }
 .blocks h2{
   color: #DF1E18;
+  margin-bottom: 20px;
+  margin-top: 60px;
 }
 .blocks ul{
   font-size: 24px;
   line-height: 150%;
+  font-weight: 700;
 }
+.blocks h1{
+  margin-top: 80px;
+}
+
 .blocks li{
   margin-top: 40px;
 }
@@ -1616,6 +1622,7 @@ a.breadcrumbs-item:hover{
 }
 .block-hand li{
   margin-top:10px;
+  font-weight: 400;
 }
 .block-hand li::marker{
   color: #20384E;
@@ -1646,12 +1653,255 @@ a.breadcrumbs-item:hover{
   line-height: 24px;
   text-decoration: none;
 }
+.button-instr{
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 60px;
+  font-size: 16px;
+  border: 0;
+  display: flex;
+  height: 50px;
+  width: 260px;
+  background:  linear-gradient(89.62deg, #00CDFA 0.25%, #00BEE8 99.67%);
+  border-radius: 50px;
+}
+.button-instr:hover{
+  background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
+}
+.button-instr a{
+  padding: 13px 20px 13px 20px;
+  display: flex;
+  width: 200px;
+  color: #FFFFFF;
+  font-family: MetaPro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+.tastes{
+
+  .tastes-ins{
+    display: flex;
+    width: 690px;
+    flex-wrap: wrap;
+    div:nth-child(odd){
+      margin-right: 100px;
+    }
+    div{
+      margin-bottom: 50px;
+      p{
+        margin-top: 27px;
+        text-align: center;
+      }
+    }
+  }
+}
+.taste{
+  font-size: 24px;
+  line-height: 140%;
+  font-weight: 700;
+  color:#DF1E18;
+}
+.gluten-free{
+  div{
+    display: flex;
+    margin-bottom: 80px;
+  }
+  .check-img{
+    width: 120px;
+  }
+}
+.sol{
+  display: flex;
+  margin-bottom: 40px;
+  margin-right: 82px;
+  img{
+    margin-right: 40px;
+  }
+  h2{
+    font-size: 24px;
+    line-height: 140%;
+    color:#DF1E18;
+    margin: 0;
+  }
+  p{
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+.rel{
+  position: relative;
+}
+.dia{
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 140% !important;
+  color: #FFFFFF;
+}
+.inf{
+  position: absolute;
+  top: 75%;
+  right: 50px;
+}
+.ninf{
+  text-align: center;
+  width: 120px;
+  position: absolute;
+  top: 20%;
+  right: 120px;
+}
+.diagram{
+  position: absolute;
+  z-index: -1;
+}
+.bg-diagram{
+  left:53%;
+  top:10%;
+  position: absolute;
+  z-index: -2;
+}
+.ideal-sol{
+  display:flex;
+}
+.dia-block{
+  margin-top: 50px;
+  width: 690px;
+  height: 312px;
+  background: #F2FAFF;
+  border-radius: 10px;
+  display: flex;
+  p{
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(67, 83, 99, 0.5);
+    margin-bottom: 20px;
+  }
+  div{
+    margin-top: 30px;
+    width: 320px;
+    margin-left: 30px;
+  }
+  ul{
+    font-size: 16px;
+    line-height: 140%;
+    padding-left: 20px;
+  }
+  li::marker{
+    width: 7px;
+    height: 7px;
+  }
+  li{
+    margin-bottom: 20px;
+  }
+}
+.pills-photo-prod{
+  height: 397px;
+  width: 627px;
+  margin-top: -50px;
+  margin-left: 130px;
+}
+.pills-force{
+  position: absolute;
+  top: 250px;
+  left: 253px;
+  width: 205px;
+  height: 157px;}
+
+.table-img{
+  height: 210px;
+  width: 160px;
+}
+
+.for-kids-block{
+  margin-top: 200px;
+  width: 1420px;
+  height: 990px;
+  background-image: url('/dist/assets/img/block-bg.svg');
+  border-radius: 10px;
+}
+.every-mom{
+  margin-top: 50px;
+  display: flex;
+}
+.every-mom p{
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+  width: 650px;
+}
+.cens{
+  height:59px;
+  position: relative;
+  top:0px;
+  right: -70px;
+}
+.main-info p{
+  margin-bottom: 30px;
+  font-size: 20px;
+  line-height: 140%;
+  font-weight: 700;
+}
+.main-info ul{
+  font-size: 16px;
+  line-height: 140%;
+}
+.main-info li::marker{
+  width: 7px;
+  height: 7px;
+  color:#DF1E18;
+}
+.main-info {
+  width: 600px;
+}
+.kids-ins-block{
+  margin: auto;
+  width: 1232px;
+  margin-top: 85px;
+  display: flex;
+}
+.uls-list{
+  display: flex;
+}
+.kids-img{
+  width: 293px;
+  height: 453px;
+  margin-left: 160px;
+  margin-top: -60px;
+}
+.not-inside{
+  margin-top:60px;
+}
+.footnote{
+  width: 1232px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 140%;
+}
+.footnote p{
+  margin-top: 60px;
+}
 
 
 

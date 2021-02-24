@@ -388,6 +388,9 @@
     color: #20384E;
     text-decoration: none;
   }
+  .articles .owl-stage-outer{
+    overflow: visible !important;
+  }
   .all-atrlicles:hover{
     color: #45B3F1;
   }
@@ -427,6 +430,9 @@
   }
   .catalog-item:hover .img-container{
     height: 100%;
+  }
+  .catalog-item:hover img{
+    border-radius: 10px;
   }
   .articles{
     margin-bottom: 0px;
@@ -524,24 +530,25 @@
   }
   .head-container{
     display: flex;
+
     margin-bottom: 0px;
     margin-left: 0px;
   }
   .head-text-spray{
     margin-left: 0px;
-    height: 577px;
+
   }
   .total-action{
     height: 96px;
     width: 107px;
     position: absolute;
-    margin: -20px 0 0 -90px;
+    margin: -10px 0 0 -90px;
     animation: rotate_logo 0s none;
   }
   .srpay-photo{
     height: 300px;
     width: 350px;
-    margin-top: 4c0px;
+    margin-top: 10px;
   }
   .head-images-spray{
     position: relative;
@@ -553,8 +560,8 @@
     height: 630px;
     z-index: -10;
     position: absolute;
-    right: calc(50% - 350px);
-    top: calc(50% - 390px);
+    right: calc(50% - 400px);
+    top: calc(50% - 300px);
   }
   .page-text{
     width: 690px;
@@ -666,10 +673,13 @@
   .background-mixin{
     position: relative;
     top: 0;
-    left: 0;
+    left: -40%;
   }
   .razm-320{
     display: none;
+  }
+  .mobile-disp{
+    display: block;
   }
 
 
@@ -1110,6 +1120,82 @@
 
 
 
+  .spray-title-prod{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: MetaPro;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 55px;
+    color: #435363;
+  }
+  .spray-info-prod{
+    font-weight: 700;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 24px;
+    padding-left: 25px;
+    color: #20384E;
+    width: 260px;
+    margin: 0;
+  }
+  .spray-info-prod li{
+
+    margin-bottom: 30px;
+  }
+  .spray-info-prod li::marker{
+    height: 10px;
+    width: 10px;
+    color:  #CE2424;
+  }
+  .checked-img img{
+    margin-right: 13px;
+    width: 60px;
+    height: 60px;
+  }
+  .srpay-photo-prod{
+    height: 292px;
+    width: 249px;
+    margin-left: 45px;
+    margin-top: 90px;
+  }
+  .head-images-spray-prod{
+    margin: 0;
+    height: 292px;
+  }
+  .total-action-prod{
+    height: 107px;
+    width: 96px;
+    left: 250px;
+    top:20px;
+    position: absolute;
+    animation: rotate_logo 0s none;
+  }
+  .page-content-prod{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 0px;
+    color: #20384E;
+  }
+  .head-text-spray-prod{
+    margin-left: 0px;
+    height: 200px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   .back-to svg{
     transform: rotate(180deg);
     margin: 10px 10px 0 0;
@@ -1132,7 +1218,6 @@
 
 
   .soc-webs{
-
     display: flex;
   }
   .soc-webs a{
@@ -1143,7 +1228,8 @@
     margin-top: 0;
     width: 216px;
   }
-
+  .bg-cont{z-index: -100;}
+  .bg-cont-prod{z-index: -100;}
 
 
 
