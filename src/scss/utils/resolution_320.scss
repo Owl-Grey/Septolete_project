@@ -444,6 +444,14 @@
     width: 193px;
     margin-top: 40px;
   }
+  .pills-photo{
+    position: absolute;
+    top:20%;
+    right: calc(50% + 60px);
+    height: 239px;
+    width: 231px;
+    margin-top: 30px;
+  }
   .head-images-spray{
 
     margin-top: 0px;
@@ -456,6 +464,14 @@
     position: absolute;
     right: calc(50% - 490px);
     top: calc(50% - 600px);
+  }
+  .cross-instr{
+    width: 1096px;
+    height: 630px;
+    z-index: -10;
+    position: absolute;
+    right: calc(50% - 400px);
+    top: calc(50% - 400px);
   }
   .page-text{
     width: 290px;

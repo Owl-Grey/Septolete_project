@@ -18,7 +18,7 @@ block content
       +anim-bg()
     .container      
       +breadcrumbs('Главная страница','Септолете® Тотал Спрей')      
-      .head-prod-container
+      .head-prod-container#top  
         .head-text-spray-prod
           p.spray-title-prod='Септолете® Тотал спрей'          
             ul.spray-info-prod
@@ -79,7 +79,7 @@ block content
               img.line-bottom(src='/assets/img/Line 23.svg')
             div.anons-elem.ideal-solution
               h2='Septolete Total - идеальное решение независимо от причины.'
-              div.rel
+              div.rel#dia
                 .ideal-sol
                   div
                     .sol
@@ -160,14 +160,14 @@ block content
                 li='Тройная сила в одной таблетке (снимает боль, уменьшает воспаление, устраняет причину инфекции)'
                 li='Быстро снимает боль (действует через 15 мин.) и долго действует (до 3ч)'
               img.line-bottom(src='/assets/img/Line 23.svg')
-            div.anons-elem.gluten-free
+            div.anons-elem.gluten-free#glu-free
               h2='Не содержит сахара и глютена'
               div  
                 img.check-img(src='/assets/img/check.svg')
                 img.check-img(src='/assets/img/sugar.svg')
                 img.check-img(src='/assets/img/glu.svg')
               img.line-bottom(src='/assets/img/Line 23.svg')              
-            div.anons-elem.tastes
+            div.anons-elem.tastes#high
               h2='Высококачественные леденцы на любой вкус'
               .tastes-ins  
                 div
@@ -195,12 +195,20 @@ block content
                   li
                     a(href='#triplet')='Тройная сила спрея Септолете Тотал'
                   li
+                    a(href='#dia')='Septolete Total - идеальное решение независимо от причины.'   
+                  li
                     a(href='#real-help')='Septolete total - реальная помощь в случае начального царапания и раздражения в горле или болезненного, припухшего горла.'
                   li
-                    a(href='#using')='Как использовать спрей Септолете Тотал?'
+                    a(href='#using')='Как использовать леденцы Септолете Тотал?'
                   li
                     a(href='#why')='Почему выбирают наш спрей?'
-                  
+                  li
+                    a(href='#glu-free')='Не содержит сахара и глютена'
+                  li
+                    a(href='#high')='Высококачественные леденцы на любой вкус'  
+          a.upstairs(href='#top')
+            svg(width="18" height="50" viewBox="0 0 18 50" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M7.9261 0.348899L0.346821 7.99321C-0.115609 8.45961 -0.115609 9.216 0.346821 9.6824C0.809347 10.1489 1.55913 10.1489 2.02165 9.6824L7.57925 4.07712L7.57925 47.8642C7.57925 48.5238 8.10952 49.0586 8.76351 49.0586C9.41742 49.0586 9.94778 48.5238 9.94778 47.8642L9.94777 4.07712L15.5054 9.68222C15.9679 10.1487 16.7177 10.1487 17.1802 9.68222C17.4113 9.44907 17.5271 9.1433 17.5271 8.83762C17.5271 8.53195 17.4113 8.22626 17.1802 7.99302L9.60093 0.348899C9.1384 -0.117592 8.38862 -0.117592 7.9261 0.348899Z" fill="#C5DEEC")            
                     
           
   +interesting-block()
