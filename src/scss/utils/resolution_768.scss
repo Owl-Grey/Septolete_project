@@ -1181,6 +1181,180 @@
     margin-left: 0px;
     height: 200px;
   }
+  .head-prod-container{
+    margin-left: 0;
+  }
+
+
+  .pills-photo-prod{
+    height: 283px;
+    width: 306px;
+    margin-top: 90px;
+    margin-left: 0px;
+  }
+  .pills-force{
+    position: absolute;
+    top: 290px;
+    left: 253px;
+    width: 205px;
+    height: 157px;}
+
+  .table-img{
+    height: 210px;
+    width: 160px;
+  }
+
+  .for-kids-block{
+    position: relative;
+    margin-top: 250px;
+    width: 668px;
+    height: 1275px;
+    background-image: url('/dist/assets/img/block-bg-768.svg');
+    border-radius: 10px;
+  }
+  .kids-cont{
+    width: 508px;
+    margin: auto;
+  }
+  .every-mom{
+    margin-top: 30px;
+    display: block;
+  }
+  .every-mom p{
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 700;
+
+  }
+  .cens{
+    height:59px;
+    position: absolute;
+    top:20px;
+    right: 20px;
+  }
+  .main-info p{
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 700;
+  }
+  .main-info ul{
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .main-info li::marker{
+    width: 7px;
+    height: 7px;
+    color:#DF1E18;
+  }
+
+  .kids-ins-block{
+    margin: auto;
+    width: 508px;
+    margin-top: 60px;
+    display: flex;
+  }
+  .uls-list{
+    display: flex;
+  }
+  .kids-img{
+  display: none;
+  }
+  .not-inside{
+    margin-top:40px;
+  }
+  .footnote{
+    width: 508px;
+    margin: auto;
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .footnote p{
+    margin-top: 40px;
+  }
+
+
+
+
+
+
+
+
+
+  .cookie{
+    position:fixed;
+    width: 100%;
+    height: 293px;
+    bottom: 0;
+    left: 0;
+    z-index: 10000;
+    background: #FFFFFF;
+    .container{
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+    h2{
+      font-size: 20px;
+      line-height: 24px;
+      color: #20384E;
+    }
+    p{
+      font-size: 14px;
+      line-height: 20px;
+      color: #65788A;
+    }
+    a{
+      font-size: 14px;
+      line-height: 20px;
+      color: #20384E;
+      text-decoration: none;
+    }
+    a:hover{
+      color: #20384E;
+    }
+    a:hover path{
+      fill: #20384E;
+    }
+    .cookie-ins{
+      display: flex;
+
+    }
+
+  }
+  .cookie-btn{
+    justify-content: center;
+    margin-top: 120px;
+    margin-left: 20px;
+    font-size: 16px;
+    border: 0;
+    display: flex;
+    height: 50px;
+    width: 185px;
+    background:  linear-gradient(89.62deg, #00CDFA 0.25%, #00BEE8 99.67%);
+    border-radius: 50px;
+    a{
+      padding: 13px 30px 13px 30px;
+      display: flex;
+      width: 125px;
+      color: #FFFFFF !important;
+      font-family: MetaPro;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+    }
+    :hover{
+      background: linear-gradient(89.62deg, #00CDFA 0.25%, #00BEE8 99.67%);
+      border-radius: 50px;
+    }
+  }
+
+
+
+
+
 
 
 

@@ -1950,8 +1950,74 @@ a.breadcrumbs-item:hover{
   height: 620px;
 }
 
+.cookie{
+  position:fixed;
+  width: 100%;
+  height: 205px;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  background: #FFFFFF;
+  .container{
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  h2{
+    font-size: 20px;
+    line-height: 24px;
+    color: #20384E;
+  }
+  p{
+    font-size: 14px;
+    line-height: 20px;
+    color: #65788A;
+  }
+  a{
+    font-size: 14px;
+    line-height: 20px;
+    color: #20384E;
+    text-decoration: none;
+  }
+  a:hover{
+    color: #DF1E18;
+  }
+  a:hover path{
+    fill: #DF1E18;
+  }
+  .cookie-ins{
+    display: flex;
+    margin-left: 90.5px;
+  }
 
-
+}
+.cookie-btn{
+  justify-content: center;
+  margin-top: 80px;
+  margin-left: 100px;
+  font-size: 16px;
+  border: 0;
+  display: flex;
+  height: 50px;
+  width: 185px;
+  background:  linear-gradient(89.62deg, #00CDFA 0.25%, #00BEE8 99.67%);
+  border-radius: 50px;
+  a{
+    padding: 13px 30px 13px 30px;
+    display: flex;
+    width: 125px;
+    color: #FFFFFF !important;
+    font-family: MetaPro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+  }
+  :hover{
+    background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
+    border-radius: 50px;
+  }
+}
 
 
 

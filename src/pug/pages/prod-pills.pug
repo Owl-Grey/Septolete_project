@@ -1,0 +1,212 @@
+extends ../layout/main
+block variables
+  - var title = 'Septolete Страница товара. Леденцы';
+  - var description = 'Septolete Страница товара. Леденцы';
+  - var bodyclass = 'main';
+block css
+  each css in htmlWebpackPlugin.files.css
+    link(href=css, rel='stylesheet')
+block script
+  each js in htmlWebpackPlugin.files.js
+    script(type='text/javascript', src=js)
+
+
+block content
+  
+  .head-block
+    .bg-cont-prod   
+      +anim-bg()
+    .container      
+      +breadcrumbs('Главная страница','Септолете® Тотал Спрей')      
+      .head-prod-container
+        .head-text-spray-prod
+          p.spray-title-prod='Септолете® Тотал спрей'          
+            ul.spray-info-prod
+              li='Быстро снимает боль'
+              li='Устраняет причины инфекции'
+              li='Снижает воспаление'
+            .checked-img  
+              img(src='/assets/img/check.svg')
+              img(src='/assets/img/sugar.svg')
+              img(src='/assets/img/glu.svg')
+        .head-images-spray-prod        
+          img.pills-photo-prod(src='/assets/img/pills.svg')
+          img.total-action-prod(src='/assets/img/total-action.svg')
+      .for-kids-block
+        .kids-cont
+          .every-mom
+            img(src='/assets/img/kids-pills.svg')
+            div
+              p='Каждой маме хочется дать своему ребенку самое лучшее – вкусная и полезная еда, развивающие секции, лучшая школа, интересные каникулы. Такой же подход, когда ребенок болеет. Лекарство должно максимально быстро облегчать симптомы, быть эффективным и, конечно, безопасным.' 
+              p='Мама всегда обратит внимание на содержание сахара и глютена в препарате, если у ребенка есть ограничение на употребление этих веществ. Немаловажно для лечения ребенка, содержит ли лекарство спирт.'
+            img.cens(src='/assets/img/6plus.svg')
+          .kids-ins-block
+            .main-info
+              p='При боли в горле, для детей от 6 лет есть оптимальный вариант – Септолете® Тотал. Его тотальное действие направлено на:'
+              ul
+                li='Быстрое облегчение боли (всего за 15 минут)'
+                li='Снятие воспаления (отек, покраснение и першение)'
+                li='Устранение причины инфекции (вирусы, бактерии, грибки)'
+              .not-inside
+                p='И самое важное, для заботливых мам, препарат'
+                  span.kids-red=' НЕ СОДЕРЖИТ:'
+                .uls-list
+                  ul
+                    li='Антибиотик'
+                    li='Спирт'
+                  ul
+                    li='Глюкозу'
+                    li='Глютен'    
+            img.kids-img(src='/assets/img/family.svg')
+          .footnote  
+            p='Мама всегда обратит внимание на содержание сахара и глютена в препарате, если у ребенка есть ограничение на употребление этих веществ. Немаловажно для лечения ребенка, содержит ли лекарство спирт.'
+      .page-content-prod               
+          .page-text-prod  
+            div.anons-elem
+              h1#compose='Общая КОМПОЗИЦИЯ Септолете® Тотал:'
+              h3='Уникальная формула на рынке'
+              .unic-form
+                img(src='/assets/img/sept-composition.svg')
+                .unic-form-text
+                  p='хлорид цитилпиридиния 1 мг устраняет причину инфекции.'
+                  p='гидрохлорид бензидамина 3 мг избавляет от боли и воспаления горла'
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem.triple-force
+              h2#triplet='Тройная сила спрея Септолете® Тотал'
+              .force-troix
+                img.pills-force(src='/assets/img/pills-force.svg')
+                img.force-troix-img(src='/assets/img/group-block.svg')
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem.ideal-solution
+              h2='Septolete Total - идеальное решение независимо от причины.'
+              div.rel
+                .ideal-sol
+                  div
+                    .sol
+                      img(src='/assets/img/target.svg')
+                      div
+                        p='хлорид цитилпиридиния'
+                        h2='Устраняет причину'
+                    .sol
+                      img(src='/assets/img/man.svg')                    
+                      div
+                        p='Бензидамин'
+                        h2='Лечит симптомы'
+                  div
+                    img.diagram(src='/assets/img/dia.svg')
+                    img.bg-diagram(src='/assets/img/back-rnd.svg')
+                    p.dia.inf='Неинфекционные причины'
+                    p.dia.ninf='Инфекционные причины'
+              .dia-block 
+                div
+                  p='Неинфекционные причины'
+                  ul
+                    li='Изменения температуры/кондиционирования воздуха'
+                    li='Разговоры/крики'
+                    li='Горячие и сухие условия в помещении'
+                    li='Пыль и загрязнение воздуха'
+                    li='Сенная лихорадка'
+                div
+                  p='Инфекционные причины'
+                  ul 
+                    li='Вирус вырос на 95%'
+                    li='Бактерии до 20%'
+            div.anons-elem
+              h2#real-help='Септолете Тотал - реальная помощь в случае начального першения и раздражения в горле или болезненного, припухшего горла.'
+              img.graph(src='/assets/img/graph.svg')
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem
+              h2#using='Как использовать спрей Септолете®  Тотал?'
+              p='Удобный для пользователя режим дозировки Septolete total для взрослых и детей от' 
+                span.red-txt=' 6 лет и старше'
+              p='Всего'
+                span.red-txt='  3-4 таблетки в день'
+              table
+                tr.tr-head
+                  th.mobile='Дозировка'
+                  th='Взрослые и дети старше 12 лет'
+                  th='Дети в возрасте 6-12 лет'
+                    br
+                    span='Обратите внимание на инструкцию'
+                tr
+                  td.td-title.mobile='Леденцы Септолете Тотал'
+                  td.tr-body
+                    span.red-txt='1 леденец'                
+                  td.tr-body
+                    span.red-txt='1 леденец'                    
+                tr
+                  td.mobile(rowspan='3')
+                    img.table-img(src='/assets/img/pills.svg')
+                  td.tr-body='Повторять каждые'
+                    span.red-txt=' 3-6ч'
+                  td.tr-body='Повторять каждые'
+                    span.red-txt=' 3-6ч'
+                tr
+                  td.tr-body='Макс. доза'
+                    span.red-txt=' 3-5 применений'
+                  td.tr-body='Макс. доза'
+                    span.red-txt=' 3-5 применений'
+                tr
+                  td='Медленно растворять во рту'
+                  td='Медленно растворять во рту'
+                
+              .button-instr
+                a(href='/')='Инструкция по применению'
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem.blocks
+              h1#why='Почему выбирают спрей Септолете® Тотал?'
+              ul
+                li='Уникальная формула на рынке (бензидамин + хлорид цитипиридиния) для любой стадии боли в горле (начальный царапин, зуд или сильная боль)'
+                li='Тройная сила в одной таблетке (снимает боль, уменьшает воспаление, устраняет причину инфекции)'
+                li='Быстро снимает боль (действует через 15 мин.) и долго действует (до 3ч)'
+              img.line-bottom(src='/assets/img/Line 23.svg')
+            div.anons-elem.gluten-free
+              h2='Не содержит сахара и глютена'
+              div  
+                img.check-img(src='/assets/img/check.svg')
+                img.check-img(src='/assets/img/sugar.svg')
+                img.check-img(src='/assets/img/glu.svg')
+              img.line-bottom(src='/assets/img/Line 23.svg')              
+            div.anons-elem.tastes
+              h2='Высококачественные леденцы на любой вкус'
+              .tastes-ins  
+                div
+                  img(src='/assets/img/Group 310.svg')
+                  p='eucalyptus'
+                div
+                  img(src='/assets/img/Group 312.svg')
+                  p='lemon/honey'
+                div
+                  img(src='/assets/img/Group 313.svg')
+                  p='lemon/elderflower'
+                div
+                  img(src='/assets/img/Group 314.svg')
+                  p='for kids lemon/elderflower'
+              p.taste='Выберите свой любимый вкус! ' 
+              .button-prod
+                a(href='/')='Где купить'        
+            div.text-link.anons-elem        
+              p='Ссылки: Кошир П. Сравнение терапевтической эквивалентности тестовых и эталонных рецептур фиксированной комбинации 3 миллиграммов бензидамина гидрохлорида и 1 миллиграммов цитилпиридинового хлорида при лечении воспаления горла, связанного с инфекциями верхних дыхательных путей. Med Razgl 2015; 54 (Suppl 3): 433-42'    
+          .page-nav.anons-elem 
+            .new_article_transitions_block#scrollbar
+              ul
+                  li
+                    a(href='#compose')='Общая композиция'
+                  li
+                    a(href='#triplet')='Тройная сила спрея Септолете Тотал'
+                  li
+                    a(href='#real-help')='Septolete total - реальная помощь в случае начального царапания и раздражения в горле или болезненного, припухшего горла.'
+                  li
+                    a(href='#using')='Как использовать спрей Септолете Тотал?'
+                  li
+                    a(href='#why')='Почему выбирают наш спрей?'
+                  
+                    
+          
+  +interesting-block()
+  
+  
+    
+  
+        
+  
