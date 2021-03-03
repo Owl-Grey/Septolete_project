@@ -29,11 +29,27 @@ mixin interesting-card (img_i ,picture_text, text)
             svg(width="34" height="24" viewBox="0 0 34 8" fill="none" xmlns="http://www.w3.org/2000/svg")
               path(d="M32.9592 3.61777L29.47 0.158303C29.2572 -0.0527676 28.9119 -0.0527676 28.699 0.158303C28.4861 0.369417 28.4861 0.711644 28.699 0.922758L31.2575 3.45945L0.545175 3.45945C0.244108 3.45945 0 3.70149 0 3.99999C0 4.29846 0.244108 4.54054 0.545175 4.54054L31.2575 4.54054L28.6991 7.07723C28.4862 7.28835 28.4862 7.63057 28.6991 7.84169C28.8055 7.94716 28.9451 8 29.0846 8C29.2241 8 29.3637 7.94716 29.4701 7.84169L32.9592 4.38222C33.1721 4.17111 33.1721 3.82888 32.9592 3.61777Z" fill="#20384E")
         p.undertext=text   
+
+
+mixin product-choose (img_i ,text)
+  .catalog-choose     
+    .item-container
+      a(href='/')  
+        .not-move   
+          .choose-container
+            img.catalog-choose-img(src=img_i)            
+          .hidden-undertext-choose
+            p='Подробнее'
+            svg(width="34" height="24" viewBox="0 0 34 8" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M32.9592 3.61777L29.47 0.158303C29.2572 -0.0527676 28.9119 -0.0527676 28.699 0.158303C28.4861 0.369417 28.4861 0.711644 28.699 0.922758L31.2575 3.45945L0.545175 3.45945C0.244108 3.45945 0 3.70149 0 3.99999C0 4.29846 0.244108 4.54054 0.545175 4.54054L31.2575 4.54054L28.6991 7.07723C28.4862 7.28835 28.4862 7.63057 28.6991 7.84169C28.8055 7.94716 28.9451 8 29.0846 8C29.2241 8 29.3637 7.94716 29.4701 7.84169L32.9592 4.38222C33.1721 4.17111 33.1721 3.82888 32.9592 3.61777Z" fill="#20384E")
+        p.undertext-choose=text  
+
+
                         
 mixin breadcrumbs (b1,b2,b3)
   .breadcrumbs
     a.breadcrumbs-item(href='/')=b1
-    p.breadcrumbs-arrow='>'
+    span.breadcrumbs-arrow='>'
     a.breadcrumbs-item(href='/')=b2    
     if b3
       p.breadcrumbs-arrow='>'
@@ -46,7 +62,8 @@ mixin upstairs ()
         path(d="M7.9261 0.348899L0.346821 7.99321C-0.115609 8.45961 -0.115609 9.216 0.346821 9.6824C0.809347 10.1489 1.55913 10.1489 2.02165 9.6824L7.57925 4.07712L7.57925 47.8642C7.57925 48.5238 8.10952 49.0586 8.76351 49.0586C9.41742 49.0586 9.94778 48.5238 9.94778 47.8642L9.94777 4.07712L15.5054 9.68222C15.9679 10.1487 16.7177 10.1487 17.1802 9.68222C17.4113 9.44907 17.5271 9.1433 17.5271 8.83762C17.5271 8.53195 17.4113 8.22626 17.1802 7.99302L9.60093 0.348899C9.1384 -0.117592 8.38862 -0.117592 7.9261 0.348899Z" fill="#C5DEEC")    
       
 mixin anim-bg()
-  .razm    
+  .razm 
+    .bg-bg
     .container
       img.cross(src='/assets/img/bg-cross.svg')      
       .background-mixin          
@@ -118,7 +135,17 @@ mixin products(img_i , text)
         p=text
       
     
-  
-
+mixin prod-photo(img_i,img)
+  .prod-photo    
+      .img-photo
+        img(src=img_i)
+      .img-pack
+        img(src=img)      
+                
+mixin videos(src,img_i,text)
+  .video-item
+    img.play(src='/assets/img/play.svg')
+    video.vid(src=src,poster=img_i)
+    p=text
                  
          

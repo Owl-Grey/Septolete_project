@@ -64,9 +64,7 @@
     background: linear-gradient(180deg, #CE2424 0%, #FF0000 100%);
     border-radius: 50px;
   }
-  .button:hover{
-    background: linear-gradient(180deg, #620000 0%, #D60000 100%);
-  }
+
   .button a{
     margin: 13px 20px 13px 20px;
     display: flex;
@@ -113,10 +111,7 @@
     color:#758A9D;
     text-decoration: none;
   }
-  .lang a:hover{
-    text-decoration: underline;
-    color:#45B3F1;
-  }
+
   .lang a:active{
     color:#20384E;
   }
@@ -130,14 +125,8 @@
   .menu{
     position: relative;
   }
-  .menu:hover{
-    color:#DF1E18;
-  }
-  .menu:hover path{
-    transform-origin: center center;
-    fill:#DF1E18;
-    transform: rotate(-180deg);
-  }
+
+
   .topmenu > li {
     display: inline-block;
     position: relative;
@@ -162,10 +151,7 @@
     opacity: 0;
     transition: .3s;
   }
-  .topmenu li:hover a:before {
-    transform: translate(-50%, 0);
-    opacity: 1;
-  }
+
   .submenu {
     list-style-type:none;
     position: absolute;
@@ -184,20 +170,14 @@
     transform: translate(-50%, 20px);
     transition: .3s;
   }
-  .topmenu > li:hover .submenu {
-    visibility: visible;
-    opacity: 1;
-    transform: translate(-50%, 0);
-  }
+
   .submenu a {
     color:#20384E;
     text-decoration: none;
     transition: .3s linear;
   }
 
-  .submenu a:hover {
-    color: #DF1E18;
-  }
+
   .prod{
     width: 156px;
   }
@@ -211,7 +191,7 @@
     position: relative;
     display: flex;
     width: 100%;
-    height: 203px;
+    height: 100%;
     background: linear-gradient(269.9deg, #F4FBFF 12.37%, #DDF3FF 96.14%);
   }
   .footer-container{
@@ -238,7 +218,7 @@
     display: flex;
   }
   .our-site{
-    margin: 0 0 13 0;
+    margin: 0 0 13px 0;
     width: 150px;
     text-decoration: none;
     font-family: MetaPro;
@@ -247,12 +227,10 @@
     font-size: 14px;
     line-height: 20px;
   }
-  .our-site:hover{
-    color: #45B3F1;
-  }
+
   .law-info{
-    margin: 0 0 30 0;
-    width: 370px;
+    margin: 0;
+    width: 297px;
     font-family: MetaPro;
     color: #20384E;
     font-weight: 400;
@@ -260,19 +238,20 @@
     line-height: 20px;
   }
   .all-right-reserved{
-    margin: 0 0 0 0;
+    margin: 0 0 -15px 0;
     width: 230px;
     font-family: MetaPro;
     color: #20384E;
     font-weight: 400;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 24px;
   }
   .footer-links{
-    width: 722px;
+    width: 761px;
   }
   .footer-information{
    margin-right: 20px;
+   margin-bottom: 0;
   }
   .footer-link{
     margin: 10px 20px 20px 0;
@@ -281,7 +260,7 @@
     color: #20384E;
     font-weight: 700;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 30px;
   }
   .articles-footer{
     display: none;
@@ -304,12 +283,7 @@
   .all-right-reserved-mobile{
     display: none;
   }
-  .footer-link:hover{
-    color: #45B3F1;
-  }
-  .footer-link:hover{
-    color: #45B3F1;
-  }
+
   .footer-warn{
     margin: 20px 0 0 0;
     font-family: MetaPro;
@@ -350,12 +324,8 @@
     color: #20384E;
     text-decoration: none;
   }
-  .all-atrlicles:hover{
-    color: #45B3F1;
-  }
-  .all-atrlicles:hover path{
-    fill: #45B3F1;
-  }
+
+
   .long-arrow{
     margin-left: 10px;
     height: 8px;
@@ -368,8 +338,8 @@
     line-height: 100%;
     background-color: white;
     position: absolute;
-    top: 0px;
-    left: 22px;
+    top: 10px;
+    left: 10px;
     border-radius: 20px;
   }
   .img-container{
@@ -387,18 +357,7 @@
   .catalog-item-img{
     width: 100%;
   }
-  .catalog-item:hover .hidden-undertext p{
-    margin:0 10px 0 0;
-    color: #45B3F1;
-  }
-  .catalog-item:hover .hidden-undertext{
-    padding-bottom: 36px;
-    opacity: 1;
-    margin-top: 0px;
-  }
-  .catalog-item:hover .img-container{
-    height: 140px;
-  }
+
   .articles{
     margin-bottom: 10px;
   }
@@ -426,9 +385,7 @@
   .item-container{
     width: 262px;
   }
-  .item-container a:hover{
-    color: #435363;
-  }
+
   .item-container a{
     color: #435363;
     text-decoration: none;
@@ -455,9 +412,7 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  a.breadcrumbs-item:hover{
-    color:  #20384E;;
-  }
+
   .owl-prev{
     opacity: 0;
     transition-duration: .3s;
@@ -465,12 +420,7 @@
     top: 40%;
     position: absolute;
   }
-  .owl-prev:hover path{
-    fill:#45B3F1;
-  }
-  .owl-next:hover path{
-    fill:#45B3F1;
-  }
+
   .owl-prev:focus {
       outline: none;
   }
@@ -485,18 +435,13 @@
     position: absolute;
 
   }
-
-  .articles:hover .owl-prev{
-    opacity: 1;
-    top: calc(35% - 33px);
-    transition-duration: .3s;
-
+  .img-404 img{
+    margin-bottom: -5px;
+    margin-top: 0px;
+    width: 330,59px ;
+    height: 470px;
   }
-  .articles:hover .owl-next{
-    opacity: 1;
-    top: calc(35% - 33px);
-    transition-duration: .3s;
-  }
+
   .head-block .container {
     flex-direction:column;
     position: relative;
@@ -542,10 +487,7 @@
     line-height: 20px;
     text-decoration: none;
   }
-  .button-spray-instruction:hover{
-    background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
-    border-radius: 50px;
-  }
+
   .spray-title{
     margin-top: 100px;
     margin-bottom: 30px;
@@ -595,8 +537,16 @@
   .cross{
     position: absolute;
     z-index: -10;
-    right: calc(50% - 1050px);
+    right: calc(50% - 1000px);
     top: calc(50% - 110px);
+  }
+  .cross-instr{
+    width: 100px;
+    height: 100px;
+    z-index: -10;
+    position: absolute;
+    right: calc(50% - 400px);
+    top: calc(50% - 400px);
   }
   .page-text{
     width: 690px;
@@ -626,12 +576,7 @@
     color: #125491;
     text-decoration-line: underline;
   }
-  .page-nav a:hover{
-    font-size: 14px;
-    line-height: 20px;
-    color: #DF1E18;
-    text-decoration-line: underline;
-  }
+
   .page-nav ul{
     min-height: 300px;
     margin-top: 20px;
@@ -792,37 +737,26 @@
     z-index: 50;
     opacity: 0;
   }
-  .dropdown-btn:hover{
-    cursor: pointer;
-    border: 1px solid #45B3F1;
-  }
-  .dropdown:hover .dropdown-list{
-    opacity:1
-  }
+
   .dropdown-list div{
-    margin-top: 30px;
-    margin-bottom: 10px;
+    padding: 10px 0 10px 0;
+    margin: 0;
   }
   .dropdown-link{
     font-size: 16px;
     line-height: 100%;
     color: #20384E;
-    margin: 0 0 20px 30px;
+    margin: 20px 0 20px 30px;
   }
-  .dropdown-link:hover{
-    cursor: pointer;
-    color: #DF1E18;
-  }
+
   .more-articles-btn{
-    margin: -20px 0px 150px 505px;
+    margin: 20px 0px 150px 505px;
     width: 157px;
     height: 50px;
     background: linear-gradient(89.62deg, #00CDFA 0.25%, #00BEE8 99.67%);
     border-radius: 50px;
   }
-  .more-articles-btn:hover{
-    background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
-  }
+
   .more-articles-btn p{
     margin: 0;
     padding: 15px 30px 15px 30px;
@@ -1095,13 +1029,7 @@
     display: flex;
     flex-direction: row;
   }
-  .back-to:hover{
-    cursor: pointer;
-    color: #45B3F1;
-  }
-  .back-to:hover path{
-    fill:#45B3F1;
-  }
+
   .back-to p{
     margin-top: 0;
   }
@@ -1136,9 +1064,7 @@
     background-color: transparentize(#F2FAFF, 0.5);
     border-radius: 10px;
   }
-  .products:hover{
-    background-color: #F2FAFF;
-  }
+
   .products:active{
     border: 1px solid #45B3F1;
     border-radius: 10px;
@@ -1207,16 +1133,7 @@
     top: 35%;
     transition-duration: .3s;
   }
-  .prods-line:hover .owl-prev{
-    opacity: 1;
-    top: calc(35% - 33px);
-    transition-duration: .3s;
-  }
-  .prods-line:hover .owl-next{
-    opacity: 1;
-    top: calc(35% - 33px);
-    transition-duration: .3s;
-  }
+
   .prods-line.owl-carousel .owl-nav.disabled{
     display: block;
   }
@@ -1444,9 +1361,7 @@
     background: linear-gradient(180deg, #CE2424 0%, #FF0000 100%);
     border-radius: 50px;
   }
-  .button-prod:hover{
-    background: linear-gradient(90deg, #620000 0%, #D60000 100%);
-  }
+
   .button-prod a{
     padding: 13px 20px 13px 20px;
     display: flex;
@@ -1677,12 +1592,7 @@
       color: #20384E;
       text-decoration: none;
     }
-    a:hover{
-      color: #DF1E18;
-    }
-    a:hover path{
-      fill: #DF1E18;
-    }
+
     .cookie-ins{
       display: flex;
       margin-left: 0px;
@@ -1711,10 +1621,6 @@
       font-size: 16px;
       line-height: 24px;
       text-decoration: none;
-    }
-    :hover{
-      background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
-      border-radius: 50px;
     }
   }
 

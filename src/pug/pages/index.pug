@@ -1,7 +1,7 @@
 extends ../layout/main
 block variables
-    - var title = 'Septolete';
-    - var description = 'Septoleteы';
+    - var title = 'Septolete Главная';
+    - var description = 'Septolete Главная';
     - var bodyclass = 'main';
 
 
@@ -15,3 +15,129 @@ block script
 
 block content
   
+  .main-main
+      
+    .baba-block
+      .head-head
+        .bg-cont-main   
+          +anim-bg() 
+        .head-main 
+          .container
+            .head-txt-main 
+              div
+                ul
+                  li='Быстро снимает боль'
+                  li='Устраняет причины инфекции'
+                  li='Снижает воспаление'
+                p='Леденцы Септолете Тотал. Вкус: Лимон и бузина.  Обезболивающее действие, Противовоспалительное действие, Антисептическое действие'
+                .checked-img  
+                  img(src='/assets/img/check.svg')
+                  img(src='/assets/img/sugar.svg')
+                  img(src='/assets/img/glu.svg') 
+              div
+                img.total-action.total-main(src='/assets/img/total-action.svg')
+            .head-cont-main    
+              .head-scroll.owl-carousel 
+                +prod-photo('/assets/img/pod1.svg','/assets/img/pills-pack.svg')
+                +prod-photo('/assets/img/pod1.svg','/assets/img/pills-pack.svg')
+                +prod-photo('/assets/img/pod1.svg','/assets/img/pills-pack.svg')
+                +prod-photo('/assets/img/pod1.svg','/assets/img/pills-pack.svg')
+                +prod-photo('/assets/img/pod1.svg','/assets/img/pills-pack.svg')
+      .story
+        .container
+          .first
+            img(src='/assets/img/woman-1.svg')
+            ul 
+              li.fir='При боли'
+              li.sec='При воспалении'
+              li.th='От инфекций'
+          .second     
+            img.wmn(src='/assets/img/woman-2.svg')
+            img.znak(src='/assets/img/total-znak.svg')
+          .third
+          .forth
+          .fifth
+          .sixth
+
+  .choose-slider  
+    .container  
+      .choose-sept.owl-carousel        
+        .green
+          +product-choose('/assets/img/pod1.svg','Септолете® Тотал. Леденцы, Лимон/Бузина')
+        .blue 
+          +product-choose('/assets/img/pod1.svg','Септолете® Тотал. Леденцы, Лимон/Бузина')
+        .blue 
+          +product-choose('/assets/img/pod1.svg','Септолете® Тотал. Леденцы, Лимон/Бузина')
+        .green
+          +product-choose('/assets/img/pod1.svg','Септолете® Тотал. Леденцы, Лимон/Бузина')
+        .yellow
+          +product-choose('/assets/img/pod1.svg','Септолете® Тотал. Леденцы, Лимон/Бузина')
+  .super-test
+    .container
+      .visible-test  
+        div  
+          img(src='/assets/img/man-quest.svg')
+        div
+          .super-text
+            h2='Супертест, сможешь ответить на всё?'
+            p='Здесь Вы найдёте текст, мотивирующий рыбу для проверки Ваших знаний Septolete® total, в виде леденцов и спрея. Леденцы могут использоваться детьми старше 6 лет, они должны медленно впитываться во рту до полного растворения.'
+            .button-supertest.btn-red
+              a(href='/')='Выбрать тест'
+  .videos
+    .container
+      h2='Видеоролики'
+      .video.owl-carousel
+        +videos('/assets/img/video.mp4','/assets/img/photo_footer.svg','Почему магний важен в человеческом теле? Почему магний важен в человеческом теле?')
+        +videos('/assets/img/video.mp4','/assets/img/photo_footer.svg','Почему магний важен в человеческом теле? Почему магний важен в человеческом теле?')
+        +videos('/assets/img/video.mp4','/assets/img/photo_footer.svg','Почему магний важен в человеческом теле? Почему магний важен в человеческом теле?')
+        //iframe.youtube(width="457" height="332" src="https://www.youtube.com/embed/Vj1wjUsRp_o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+  .faq
+    .container
+      h2='Часто задаваемые вопросы'
+      .faq-ins
+        .panels
+          .panel-btn
+            .panel
+              svg(width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M12.2788 6.62929C12.9564 7.01202 12.9564 7.98798 12.2788 8.37071L2.27948 14.0186C1.61285 14.3951 0.787675 13.9135 0.787675 13.1479L0.787676 1.8521C0.787676 1.08649 1.61285 0.604869 2.27948 0.981397L12.2788 6.62929Z" fill="#45B3F1")
+              p='При каких  '
+                span.blue-txt='болезнях '
+                span='следует использовать Септолете® Тотал?'
+            .faq-text
+              p='Септолете® тотал выпускается в виде леденцов и спрея. Леденцы могут применять дети старше 6 лет, их нужно медленно рассасывать во рту до полного растворения.'
+              p='Спрей можно применять лицам старше 6 лет.'
+              p='Обе формы обладают комплексным действием против боли в горле: снимают боль, воспаление и устраняют причину инфекции.'
+          .panel-btn
+            .panel
+              svg(width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M12.2788 6.62929C12.9564 7.01202 12.9564 7.98798 12.2788 8.37071L2.27948 14.0186C1.61285 14.3951 0.787675 13.9135 0.787675 13.1479L0.787676 1.8521C0.787676 1.08649 1.61285 0.604869 2.27948 0.981397L12.2788 6.62929Z" fill="#45B3F1")
+              p='При каких  '
+                span.blue-txt='болезнях '
+                span='следует использовать Септолете® Тотал?'
+            .faq-text
+              p='Септолете® тотал выпускается в виде леденцов и спрея. Леденцы могут применять дети старше 6 лет, их нужно медленно рассасывать во рту до полного растворения.'
+              p='Спрей можно применять лицам старше 6 лет.'
+              p='Обе формы обладают комплексным действием против боли в горле: снимают боль, воспаление и устраняют причину инфекции.'
+          .panel-btn
+            .panel
+              svg(width="13" height="15" viewBox="0 0 13 15" fill="none" xmlns="http://www.w3.org/2000/svg")
+                path(d="M12.2788 6.62929C12.9564 7.01202 12.9564 7.98798 12.2788 8.37071L2.27948 14.0186C1.61285 14.3951 0.787675 13.9135 0.787675 13.1479L0.787676 1.8521C0.787676 1.08649 1.61285 0.604869 2.27948 0.981397L12.2788 6.62929Z" fill="#45B3F1")
+              p='При каких  '
+                span.blue-txt='болезнях '
+                span='следует использовать Септолете® Тотал?'
+            .faq-text
+              p='Септолете® тотал выпускается в виде леденцов и спрея. Леденцы могут применять дети старше 6 лет, их нужно медленно рассасывать во рту до полного растворения.'
+              p='Спрей можно применять лицам старше 6 лет.'
+              p='Обе формы обладают комплексным действием против боли в горле: снимают боль, воспаление и устраняют причину инфекции.'    
+        .baba        
+  .super-test
+    .container
+      .visible-test  
+        div  
+          img(src='/assets/img/man-quest.svg')
+        div
+          .super-text
+            h2='Супертест, сможешь ответить на всё?'
+            p='Здесь Вы найдёте текст, мотивирующий рыбу для проверки Ваших знаний Septolete® total, в виде леденцов и спрея. Леденцы могут использоваться детьми старше 6 лет, они должны медленно впитываться во рту до полного растворения.'
+            .button-supertest.btn-red
+              a(href='/')='Выбрать тест'
