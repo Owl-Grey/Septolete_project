@@ -603,14 +603,20 @@ $(document).ready(function(){
 
 
 
-
+  if ($('.story').length>0){
     let k=$('.story').offset().top;
+
         $(window).scroll(function() {
        var str = $(this).scrollTop();
        let end=708;
        let firf=k+236;
        let secf=k+287;
        let thf=k+338;
+       let zn=2*k+154;
+       let lif=3*k+259;
+       let lis=3*k+327+220;
+       let lit=3*k+392+100;
+       let h2=3*k+154;
       if (str>k && str<k+end) {
          $('.first img').addClass('story-vis')
          if ($('.first img').hasClass('move-main')){
@@ -664,8 +670,157 @@ $(document).ready(function(){
            }
            $('.th').removeClass('story-vis')
          }
-     });
 
+
+         if (str>4*k && str<4*k+4*end) {
+            $('.wmn2').addClass('wmn-vis')
+            if ($('.wmn2').hasClass('move-main')){
+              $('.wmn2').removeClass('move-main')
+            }
+         }else{
+             if(str>4*k+4*end){$('.wmn').addClass('move-main')
+             }else{
+               $('.wmn2').removeClass('move-main')
+             }
+             $('.wmn2').removeClass('wmn-vis')
+         }
+
+         if(str>4*k && str<4*k+4*end){
+                   if ($('.textth').hasClass('move-main')){
+             $('.textth').removeClass('move-main')
+           }
+           $('.textth').addClass('story-vis')
+         }else{
+           if(str>4*k+4*end){$('.textth').addClass('move-main')
+           }else{
+             $('.textth').removeClass('move-main')
+           }
+           $('.textth').removeClass('story-vis')
+         }
+
+
+
+
+
+
+
+         if (str>2*k && str<3*k+end) {
+            $('.wmn').addClass('wmn-vis')
+            if ($('.wmn').hasClass('move-main')){
+              $('.wmn').removeClass('move-main')
+            }
+         }else{
+             if(str>3*k+3*end){$('.wmn').addClass('move-main')
+             }else{
+               $('.wmn').removeClass('move-main')
+             }
+             $('.wmn').removeClass('wmn-vis')
+         }
+
+            if(str>2*k && str<3*k+end){
+              $('.znak').addClass('znak-vis')
+              if ($('.znak').hasClass('move-main')){
+                $('.znak').removeClass('move-main')
+              }
+              if(str>3*k && str<3*k+end){
+                $('.znak').addClass('znak-sec')
+              }
+              else{
+                $('.znak').removeClass('znak-sec')
+              }
+            }else{
+              if(str>3*k+end){$('.znak').addClass('move-main')
+              console.log(str)
+              }else{
+                $('.znak').removeClass('move-main')
+              }
+              $('.znak').removeClass('znak-vis')}
+
+            if(str>lif && str<3*k+end){
+              $('.lif').addClass('li-vis')
+              if ($('.lif').hasClass('move-main')){
+                $('.lif').removeClass('move-main')
+              }
+              if(str>lis && str<3*k+end){
+                $('.lif p').addClass('visib')
+                setTimeout(function(){
+                  $('.lif p').addClass('visib-p')
+                },100)
+              }else{
+                $('.lif p').removeClass('visib-p')
+                $('.lif p').removeClass('visib')
+              }
+            }else{
+              if(str>3*k+end){$('.lif').addClass('move-main')
+              }else{
+                $('.lif').removeClass('move-main')
+              }
+              $('.lif').removeClass('li-vis')}
+
+
+            if(str>lis && str<3*k+end){
+              $('.lis').addClass('li-vis')
+              if ($('.lis').hasClass('move-main')){
+                $('.lis').removeClass('move-main')
+              }
+              if(str>lit && str<3*k+end){
+                $('.lis p').addClass('visib')
+                setTimeout(function(){
+                  $('.lis p').addClass('visib-p')
+                },300)
+              }else{
+                $('.lis p').removeClass('visib-p')
+                $('.lis p').removeClass('visib')
+              }
+            }else{
+              if(str>3*k+end){$('.lis').addClass('move-main')
+              }else{
+                $('.lis').removeClass('move-main')
+              }
+              $('.lis').removeClass('li-vis')}
+
+
+
+            if(str>lis && str<3*k+end){
+              $('.lit').addClass('li-vis')
+              if ($('.lit').hasClass('move-main')){
+                $('.list').removeClass('move-main')
+              }
+              if(str>lit && str<3*k+end){
+                $('.lit p').addClass('visib')
+                setTimeout(function(){
+                  $('.lit p').addClass('visib-p')
+                },300)
+              }else{
+                $('.lit p').removeClass('visib-p')
+                $('.lit p').removeClass('visib')
+              }
+            }else{
+              if(str>3*k+end){$('.lis').addClass('move-main')
+              }else{
+                $('.lit').removeClass('move-main')
+              }
+              $('.lit').removeClass('li-vis')}
+
+
+
+            if(str>h2 && str<3*k+end){
+              $('.h').addClass('h-vis')
+              if ($('.h').hasClass('move-main')){
+                $('.h').removeClass('move-main')
+              }
+            }else{
+              if(str>3*k+end){$('.h').addClass('move-main')
+              }else{
+                $('.h').removeClass('move-main')
+              }
+              $('.h').removeClass('h-vis')}
+
+
+
+
+     });
+   }
      $('.video-item').click(function () {
         let ths=$(this).find('.play')
         let vid=$(this).find('.vid')
