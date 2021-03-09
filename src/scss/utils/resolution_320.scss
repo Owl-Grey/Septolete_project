@@ -874,6 +874,7 @@
 
   }
   .page-content-article-name h1{
+    margin-bottom: 100px;
     font-weight: 700px;
     font-size: 36px;
     line-height: 140%;
@@ -894,7 +895,7 @@
   .illnes{
     height: 168px;
     width: 290px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
   .page-text-article-name h3{
     font-size: 28px;
@@ -912,6 +913,10 @@
     font-size: 12px;
     line-height: 150%;
     padding-left: 15px;
+    ::marker{
+      width: 7px;
+      height: 7px;
+    }
   }
   .page-text-article-name ul li{
     margin-bottom: 10px;
@@ -933,7 +938,7 @@
     color: #DF1E18;
   }
   .block-total .point{
-    padding-top: 20px;
+    padding-top: 23px;
     margin: 0 20px 0 20px;
     font-size: 16px;
     line-height: 140%;

@@ -22,6 +22,7 @@
     transform: translate(-50%, 0);
   }
   .submenu a:hover {
+    width: 230px;
     color: #DF1E18;
   }
   .our-site:hover{
@@ -78,10 +79,7 @@
  .ankers a:hover{
    color: #DF1E18;
  }
- .button-spray-instruction:hover{
-   background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
-   border-radius: 50px;
- }
+
  .page-nav a:hover{
    font-size: 14px;
    line-height: 20px;
@@ -94,6 +92,7 @@
 
  .btn-red:hover::before{
    opacity: 1;
+
  }
  .dropdown-btn:hover{
    cursor: pointer;
@@ -124,6 +123,9 @@
    background-color: #F2FAFF;
    cursor: pointer;
  }
+ .button:hover{
+   cursor: pointer;
+ }
  .button-prod:hover{
    background: linear-gradient(90deg, #620000 0%, #D60000 100%);
  }
@@ -136,10 +138,7 @@
  .cookie a:hover path{
    fill: #DF1E18;
  }
-.cookie-btn:hover{
-  background: linear-gradient(89.62deg, #007994 0.25%, #00C3EE 99.67%);
-  border-radius: 50px;
-}
+
 .green:hover {
   background: radial-gradient(50% 50% at 50% 50%, #05F83A 0%, rgba(255, 255, 255, 0) 100%);
 }
@@ -190,9 +189,28 @@
   }
 }
 
-
-
-
+.ans-btn:hover{
+  border: 1px solid #20384E;
+p{
+  color: #20384E;
+  }
+}
+.next-btn:hover{
+  border: 1px solid #20384E;
+p{
+  color: #20384E;
+  }
+}
+.tst:hover{
+  p{
+    color: #45B3F1;
+  }
+}
+.prg svg:hover{
+  path{
+    fill:#45B3F1;
+  }
+}
 
 
 
