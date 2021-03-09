@@ -888,10 +888,6 @@ $(document).ready(function(){
                 $('.h').removeClass('move-main')
               }
               $('.h').removeClass('h-vis')}
-
-
-
-
      });
    }
      $('.video-item').click(function () {
@@ -952,5 +948,34 @@ $(document).ready(function(){
         $(y).addClass('ans-prg')
      });
 
+
+
+
+     $(document).on('click','.button-anlise',function () {
+       $('.visible-anlise').addClass('visib-p')
+       $('.check-symps').addClass('disp-block')
+       $('.head').addClass('disp-block')
+       $('.choose-symps').addClass('disp-block')
+     });
+
+
+
+     $(document).on('click','.symp-btn',function () {
+      let th=$(this)
+      if (th.hasClass('s-active')){
+        th.removeClass('s-active')
+      }else{
+        th.addClass('s-active')
+      }
+      if($('.symp-btn').hasClass('s-active')){
+        $('.choose-symps').removeClass('disp-block')
+        $('.pills-check').addClass('disp-block')
+      }
+      else{
+        $('.choose-symps').addClass('disp-block')
+        $('.pills-check').removeClass('disp-block')
+      }
+
+     });
 
 });
