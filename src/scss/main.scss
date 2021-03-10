@@ -1941,7 +1941,10 @@ footer{
   opacity:1;
 }
 .mobile-disp{
-  display: none;
+  display: none !important;
+}
+.mobile{
+  display: none !important;
 }
 .bg-cont {
   overflow: hidden;
@@ -2641,6 +2644,10 @@ footer{
     margin: auto;
     width: 427px;
   }
+  h2{
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
 }
 .choose-test{
   display: none;
@@ -3004,6 +3011,7 @@ footer{
     }
   }
   .info-s{
+    background: #FFFFFF;
     margin-top: 50px;
     display: flex;
     width: 570px;

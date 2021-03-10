@@ -127,19 +127,19 @@ $('.test-list').owlCarousel({
     responsive:{
         0:{
             items:2,
-            margin:0,
+            margin:32,
             loop:true,
             autoWidth: true,
         },
         750:{
             items:3,
-            margin:30,
+            margin:35,
             loop:true,
             autoWidth: true,
         },
         1300:{
-            items:4,
-            margin:40,
+            items:2,
+            margin:20,
             loop:true,
         },
         1450:{
